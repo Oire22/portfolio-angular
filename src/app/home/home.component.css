@@ -1,0 +1,16 @@
+#banner{
+    padding-bottom: 10px;
+}
+
+.container {
+    width: 100vw;
+    max-width: 1336px;
+    min-width: 320px;
+    margin: auto;
+}
+
+.container img{
+    margin-top: 30px;
+    width: 100%;
+
+}
