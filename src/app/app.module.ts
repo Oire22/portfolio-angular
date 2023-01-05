@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgxBootstrapIconsModule } from 'ngx-bootstrap-icons';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +14,9 @@ import { FooterComponent } from './footer/footer.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ContactComponent } from './contact/contact.component';
 
+import {BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { EducationComponent } from './education/education.component'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,11 +27,14 @@ import { ContactComponent } from './contact/contact.component';
     ProjectsComponent,
     FooterComponent,
     SkillsComponent,
-    ContactComponent
+    ContactComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    NgxBootstrapIconsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
