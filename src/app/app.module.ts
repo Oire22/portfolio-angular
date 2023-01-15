@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgxBootstrapIconsModule } from 'ngx-bootstrap-icons';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,7 +16,8 @@ import { SkillsComponent } from './skills/skills.component';
 import { ContactComponent } from './contact/contact.component';
 
 import {BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { EducationComponent } from './education/education.component'
+import { EducationComponent } from './education/education.component';
+import { LoginComponent } from './login/login.component'
 
 @NgModule({
   declarations: [
@@ -28,13 +30,16 @@ import { EducationComponent } from './education/education.component'
     FooterComponent,
     SkillsComponent,
     ContactComponent,
-    EducationComponent
+    EducationComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgxBootstrapIconsModule
+    NgxBootstrapIconsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

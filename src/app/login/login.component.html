@@ -1,0 +1,109 @@
+
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel">Log In</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="form"  (ngSubmit)="onEnviar($event)">    
+                <div>
+                    <label for="email">Email: </label>                          
+                    <input type="email" formControlName="email">
+                </div>
+                <!-- Gracias al getter que configuramos en el controlador -->
+                <div *ngIf="Mail?.errors  && Mail?.touched">    
+                    <p *ngIf="Mail?.hasError('required')" class="error">
+                        El email es requerido.
+                    </p>
+                    <p *ngIf="Mail?.hasError('email')" class="error">
+                        El formato del email debe ser válido.
+                      </p>
+                </div>
+            
+                <br/>
+                <div>
+                    <label for="exampleInputPassword1" class="form-label">Password: </label>
+                    <input type="password" formControlName="password" [class.border-danger]="MailValid">
+                </div>
+                <!-- Gracias al getter que configuramos en el controlador -->
+                <div *ngIf="Password?.errors  && Password?.touched">
+                <p *ngIf="Password?.hasError('required')" class="error">
+                  El password es requerido.
+                </p>
+                </div>
+                <br/>
+                <div>
+                    <button   type="submit">Iniciar Sesión</button>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel2">Sign Up</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="form" (ngSubmit)="onEnviar($event)"> 
+            <div>
+                <label for="Nombre">Nombre: </label>
+                <input type="text" formControlName="Nombre">
+            </div>
+            <div *ngIf="Nombre?.errors  && Nombre?.touched">    
+                <p *ngIf="Nombre?.hasError('required')" class="error">
+                    El nombre es requerido.
+                </p>
+            </div>
+              <br>
+            <div>
+                <label for="Apellido">Apellido: </label>
+                <input type="text" formControlName="Apellido">
+            </div>
+            <div *ngIf="Apellido?.errors && Apellido?.touched">
+                <p *ngIf="Nombre?.hasError('required')" class="error">
+                    El apellido es requerido
+                </p>
+            </div>
+              <br>
+            <div>
+                <label for="email">Email: </label>                          
+                <input type="email" formControlName="email">
+            </div>
+            <div *ngIf="Mail?.errors  && Mail?.touched">    
+                <p *ngIf="Mail?.hasError('required')" class="error">
+                    El email es requerido.
+                </p>
+                <p *ngIf="Mail?.hasError('email')" class="error">
+                    El formato del email debe ser válido.
+                  </p>
+            </div>
+              <br>
+            <div>
+              <label for="exampleInputPassword1" class="form-label">Password: </label>
+              <input type="password" formControlName="password" [class.border-danger]="MailValid">
+            </div>
+          <div *ngIf="Password?.errors  && Password?.touched">
+            <p *ngIf="Password?.hasError('required')" class="error">
+              El password es requerido.
+            </p>
+          </div>
+          <br>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Log In</button>
+          <button class="btn btn-primary" type="submit">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
