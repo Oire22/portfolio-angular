@@ -1,19 +1,15 @@
-#about-cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top:70px;
-    
+#about-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
 }
 
-.card{
-    margin: 12px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 20px;
-    border-radius: 10px;
+.card {
+  margin: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 10px;
 }
-
-
-

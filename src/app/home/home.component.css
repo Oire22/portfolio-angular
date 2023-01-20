@@ -1,19 +1,18 @@
-
-#banner{
-    padding-bottom: 5px;
+#banner {
+  padding-bottom: 5px;
 }
 
 .container {
-    width: 100vw;
-    max-width: 1336px;
-    min-width: 320px;
+  width: 100vw;
+  max-width: 1336px;
+  min-width: 320px;
 }
 
-.container img{
-   padding-top: 70px;
-    width: 100%;
+.container img {
+  padding-top: 70px;
+  width: 100%;
 }
 
 #banner {
-    filter: grayscale(10%);
+  filter: grayscale(10%);
 }
