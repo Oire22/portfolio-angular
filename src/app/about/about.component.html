@@ -16,15 +16,16 @@
       <div class="card">
         <div class="card-body">
           <h4 class="card-title">Personal Data</h4>
-          <ul>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-          </ul>
+          <li *ngFor="let personas of personas">
+            <ul>Nombre: {{personas.nombre}}, Apellido: {{personas.apellido}}</ul>
+            <ul>Edad: {{personas.edad}}</ul>
+            <ul>Lorem ipsum dolor sit amet consectetur adipisicing elit.</ul>
+            <ul>Lorem ipsum dolor sit amet consectetur adipisicing elit.</ul>
+            <ul>Lorem ipsum dolor sit amet consectetur adipisicing elit.</ul>
+          </li>
         </div>
       </div>
     </div>
   </div>
 </section>
+
