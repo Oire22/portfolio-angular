@@ -1,37 +1,37 @@
 <section class="education">
+  <h3 style="color: white;">Educación</h3>
   <div class="row g-3">
     <div class="col-md-6 col-sm-12">
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button
+      <div class="accordion" id="accordionExample" *ngFor="let educacion of educacion">
+        <div class="accordion-item" *ngIf="educacion.id === 1">
+            <h2 class="accordion-header" id="headingOne">
+              <button
               class="accordion-button"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseOne"
               aria-expanded="true"
               aria-controls="collapseOne"
-            >
-              Educación secundaria 
+              >
+              {{educacion.titulo}}
             </button>
           </h2>
           <div
-            id="collapseOne"
-            class="accordion-collapse collapse show"
-            aria-labelledby="headingOne"
-            data-bs-parent="#accordionExample"
+          id="collapseOne"
+          class="accordion-collapse collapse show"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
           >
-            <div class="accordion-body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-                dignissimos consequuntur delectus saepe harum perferendis natus
-                itaque voluptate ullam repudiandae illum provident quo, quasi
-                quia ducimus dolorum adipisci pariatur molestiae!
-              </p>
-            </div>
+          <div class="accordion-body">
+            <p>
+              {{educacion.descripcion}}
+            </p>
+            <ul>Institución: {{educacion.institucion}}</ul>
+            <ul>Período: {{educacion.periodo}}</ul>
           </div>
         </div>
-        <div class="accordion-item">
+        </div>
+        <div class="accordion-item" *ngIf="educacion.id === 2">
           <h2 class="accordion-header" id="headingTwo">
             <button
               class="accordion-button collapsed"
@@ -41,7 +41,7 @@
               aria-expanded="false"
               aria-controls="collapseTwo"
             >
-              Educación universitaria
+              {{educacion.titulo}}
             </button>
           </h2>
           <div
@@ -52,15 +52,14 @@
           >
             <div class="accordion-body">
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab
-                impedit itaque pariatur aut dolorem dolore, voluptatibus fugit
-                dicta est, quidem beatae ad nam ex porro excepturi repellendus
-                esse. Magnam, corporis.
+                {{educacion.descripcion}}
               </p>
+              <ul>Institución: {{educacion.institucion}}</ul>
+              <ul>Período: {{educacion.periodo}}</ul>
             </div>
           </div>
         </div>
-        <div class="accordion-item">
+        <div class="accordion-item" *ngIf="educacion.id === 3">
           <h2 class="accordion-header" id="headingThree">
             <button
               class="accordion-button collapsed"
@@ -70,7 +69,7 @@
               aria-expanded="false"
               aria-controls="collapseThree"
             >
-              Idioma
+              {{educacion.titulo}}
             </button>
           </h2>
           <div
@@ -81,11 +80,10 @@
           >
             <div class="accordion-body">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusamus, iste illum cum suscipit ducimus sequi ab ex
-                reiciendis libero fugit culpa distinctio vel voluptas ipsam in
-                error tempora veniam qui.
+                {{educacion.descripcion}}
               </p>
+              <ul>Institución: {{educacion.institucion}}</ul>
+              <ul>Período: {{educacion.periodo}}</ul>
             </div>
           </div>
         </div>
@@ -93,8 +91,8 @@
     </div>
 
     <div class="col-md-6 col-sm-12">
-      <div class="accordion" id="accordionExample1">
-        <div class="accordion-item">
+      <div class="accordion" id="accordionExample1" *ngFor="let educacion of educacion">
+        <div class="accordion-item" *ngIf="educacion.id === 52">
           <h2 class="accordion-header" id="headingFour">
             <button
               class="accordion-button"
@@ -104,7 +102,7 @@
               aria-expanded="true"
               aria-controls="collapseFour"
             >
-              #SéProgramar
+              {{educacion.titulo}}
             </button>
           </h2>
           <div
@@ -115,15 +113,14 @@
           >
             <div class="accordion-body">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-                dignissimos consequuntur delectus saepe harum perferendis natus
-                itaque voluptate ullam repudiandae illum provident quo, quasi
-                quia ducimus dolorum adipisci pariatur molestiae!
+                {{educacion.descripcion}}
               </p>
+              <ul>Institución: {{educacion.institucion}}</ul>
+              <ul>Período: {{educacion.periodo}}</ul>
             </div>
           </div>
         </div>
-        <div class="accordion-item">
+        <div class="accordion-item" *ngIf="educacion.id === 53">
           <h2 class="accordion-header" id="headingFive">
             <button
               class="accordion-button collapsed"
@@ -133,7 +130,7 @@
               aria-expanded="false"
               aria-controls="collapseFive"
             >
-              #YoProgramo
+            {{educacion.titulo}}
             </button>
           </h2>
           <div
@@ -144,15 +141,14 @@
           >
             <div class="accordion-body">
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab
-                impedit itaque pariatur aut dolorem dolore, voluptatibus fugit
-                dicta est, quidem beatae ad nam ex porro excepturi repellendus
-                esse. Magnam, corporis.
+                {{educacion.descripcion}}
               </p>
+              <ul>Institución: {{educacion.institucion}}</ul>
+              <ul>Período: {{educacion.periodo}}</ul>
             </div>
           </div>
         </div>
-        <div class="accordion-item">
+        <div class="accordion-item" *ngIf="educacion.id === 54">
           <h2 class="accordion-header" id="headingSix">
             <button
               class="accordion-button collapsed"
@@ -162,7 +158,7 @@
               aria-expanded="false"
               aria-controls="collapseSix"
             >
-              Item 3
+            {{educacion.titulo}}
             </button>
           </h2>
           <div
@@ -173,11 +169,10 @@
           >
             <div class="accordion-body">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusamus, iste illum cum suscipit ducimus sequi ab ex
-                reiciendis libero fugit culpa distinctio vel voluptas ipsam in
-                error tempora veniam qui.
+                {{educacion.descripcion}}
               </p>
+              <ul>Institución: {{educacion.institucion}}</ul>
+              <ul>Período: {{educacion.periodo}}</ul>
             </div>
           </div>
         </div>

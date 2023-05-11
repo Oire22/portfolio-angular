@@ -7,24 +7,18 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
 import { ExperienceComponent } from './experience/experience.component';
-import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { EducationComponent} from "./education/education.component";
-import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {path: "home", component: HomeComponent },
   {path: "header", component: HeaderComponent },
   {path: "about", component: AboutComponent },
   {path: "experience", component: ExperienceComponent },
-  {path: "skills", component: SkillsComponent },
   {path: "projects", component: ProjectsComponent },
-  {path: "contact", component: ContactComponent },
   {path: "footer", component: FooterComponent },
-  {path: "education", component: EducationComponent },
-  {path: "login", component: LoginComponent}
+  {path: "education", component: EducationComponent }
 ];
 
 @NgModule({
