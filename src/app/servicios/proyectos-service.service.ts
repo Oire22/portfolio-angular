@@ -9,7 +9,7 @@ export class ProyectosServiceService {
   constructor(private http: HttpClient) { }
 
   getProyectos(){
-    return this.http.get<any[]>('http://localhost:8080/Proyectos/traer')
+    return this.http.get<any[]>('https://miportfolio-web-oliveriomaranesi.onrender.com/Proyectos/traer')
   }
 
 }
