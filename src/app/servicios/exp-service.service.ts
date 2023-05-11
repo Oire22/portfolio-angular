@@ -9,6 +9,6 @@ export class ExpServiceService {
   constructor(private http: HttpClient) { }
 
   getExperiencia(){
-    return this.http.get<any[]>('http://localhost:8080/experiencia/traer')
+    return this.http.get<any[]>('https://miportfolio-web-oliveriomaranesi.onrender.com/experiencia/traer')
   }
 }

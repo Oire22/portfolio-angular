@@ -9,6 +9,6 @@ export class PersonaServiceService {
   constructor(private http: HttpClient) { }
 
   getPersonas(){
-    return this.http.get<any[]>('http://localhost:8080/personas/traer')
+    return this.http.get<any[]>('https://miportfolio-web-oliveriomaranesi.onrender.com/personas/traer')
   }
 }
