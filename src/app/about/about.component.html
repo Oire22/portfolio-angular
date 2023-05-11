@@ -2,12 +2,11 @@
   <div class="row" id="about-cards">
     <div class="col-lg-4 col-sm-6 col-12" id="img-container">
       <div class="card">
-        <img src="\assets\fondo-azul.jpg" class="card-img-top" alt="..." />
+        <img src="\assets\20220212_173542.jpg" class="card-img-top" alt="..." />
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
+          <h5 class="card-title">Acerca de mi</h5>
           <p class="card-text">
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
+            Me llamo Oliverio Maranesi. Vivo y estudio en Buenos Aires, Argentina. Me gusta relacionar el arte con la tecnología y estudio para eso. En este portfolio dejo registro de mis estudios y de mi experiencia laboral así como también de mis proyectos.
           </p>
         </div>
       </div>
@@ -15,14 +14,15 @@
     <div class="col-lg-4 col-sm-6 col-12" id="about-text">
       <div class="card">
         <div class="card-body">
-          <h4 class="card-title">Personal Data</h4>
-          <li *ngFor="let personas of personas">
-            <ul>Nombre: {{personas.nombre}}, Apellido: {{personas.apellido}}</ul>
-            <ul>Edad: {{personas.edad}}</ul>
-            <ul>Lorem ipsum dolor sit amet consectetur adipisicing elit.</ul>
-            <ul>Lorem ipsum dolor sit amet consectetur adipisicing elit.</ul>
-            <ul>Lorem ipsum dolor sit amet consectetur adipisicing elit.</ul>
-          </li>
+          <h4 class="card-title">Información Personal</h4>
+          <div *ngFor="let personas of personas">
+            <ul *ngIf="personas.id === 1">
+              <li>Nombre: {{personas.nombre}}, Apellido: {{personas.apellido}}</li>
+              <li>Edad: {{personas.edad}}</li>
+              <li>Residencia: {{personas.residencia}}</li>
+              <li>Mail: {{personas.mail}}</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

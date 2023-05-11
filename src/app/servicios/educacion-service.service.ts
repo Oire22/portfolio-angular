@@ -9,7 +9,7 @@ export class EducacionServiceService {
   constructor(private http: HttpClient) { }
 
   getEducacion(){
-    return this.http.get<any[]>('http://localhost:8080/personas/traer')
+    return this.http.get<any[]>('http://localhost:8080/educacion/traer')
   }
 
 

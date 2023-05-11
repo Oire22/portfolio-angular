@@ -9,13 +9,10 @@
           class="card-img-top"
           alt="..."
         />
-        <div class="card-body">
-          <h5 class="card-title">Mi Portfolio Web</h5>
+        <div class="card-body" *ngFor="let proyectos of proyectos">
+          <h5 class="card-title">{{proyectos.nombre}}</h5>
           <p class="card-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque ad
-            magni praesentium laboriosam quas, temporibus iste blanditiis quasi!
-            Magni, nisi. Libero incidunt expedita recusandae aliquam explicabo
-            quas cupiditate quod dolores.
+            {{proyectos.descripcion}}
           </p>
         </div>
       </div>
@@ -30,10 +27,7 @@
         <div class="card-body">
           <h5 class="card-title">PROYECTO 2</h5>
           <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Dignissimos velit at iste corporis illum blanditiis repudiandae
-            iure, cupiditate natus, voluptatem nemo ullam maxime assumenda nam
-            enim necessitatibus? Commodi, rem consequuntur!
+           Otro proyecto...
           </p>
         </div>
       </div>
@@ -48,10 +42,7 @@
         <div class="card-body">
           <h5 class="card-title">PROYECTO 3</h5>
           <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-            similique quasi dolorum praesentium commodi itaque. Quasi ut
-            aspernatur voluptas in fugit neque non, dolorum optio doloribus
-            possimus, corporis praesentium laboriosam.
+            Otro proyecto...
           </p>
         </div>
       </div>

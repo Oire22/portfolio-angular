@@ -8,6 +8,7 @@ import { PersonaServiceService } from '../servicios/persona-service.service';
 })
 export class AboutComponent implements OnInit{
 
+  id!: number;
   personas: any
   persona: any
   nombre!: string;
