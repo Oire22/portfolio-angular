@@ -1,3 +1,2 @@
 # PortfolioAngular
-
-Proyecto de portfolio con Angular y Spring para #YoProgramo, Argentina Programa. 
+Frontend de Mi Portfolio Web realizado con Angular para proyecto final de #YoProgramo, Argentina Programa.
